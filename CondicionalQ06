@@ -1,0 +1,24 @@
+package javaAula03;
+import java.util.Scanner;
+public class Q06 {
+
+	public static void main(String[] args) {
+	Scanner preco = new Scanner(System.in);
+double valor, desconto;
+	
+	System.out.print("Insira o valor gasto em sua compra: ");
+	valor = preco.nextDouble();
+	desconto = valor * 0.10;
+	
+		if ((valor > 500)&&(!(valor <= 200))) {
+			System.out.println ("Parabens! Voce conseguiu um valor de 10%! O valor final eh de "+ (valor - desconto));
+			if ((valor <= 500)&&(!(valor <= 200))){
+				System.out.println ("Chegou perto! Mas nenhum desconto foi aplicado :(");
+			}
+		}
+	else {
+		System.out.println ("O valor da compra foi de "+valor);
+		}
+	}
+// João Guilherme Ribeiro Gurgel
+}
