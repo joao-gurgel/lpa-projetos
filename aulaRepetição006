@@ -1,0 +1,18 @@
+package cont;
+import java.util.Scanner;
+public class RepeticaoAula006 {
+	public static void main(String[] args) {
+		Scanner valor = new Scanner(System.in);
+		
+		int num, comparar;
+		comparar = 0;
+		
+		System.out.println("Insira um valor inteiro: ");
+		num = valor.nextInt();
+			
+		do {
+			comparar++;
+			System.out.println("Mostre "+comparar);
+		}while(comparar<num);
+	}
+}
