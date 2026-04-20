@@ -1,0 +1,25 @@
+programa {
+  funcao inicio() {
+  cadeia nomeFuncionario 
+  inteiro pesoFuncionario
+  inteiro idadeFuncionario
+  real salarioDesejado
+
+  nomeFuncionario = "User"
+  pesoFuncionario = 0
+  idadeFuncionario = 0
+  salarioDesejado = 0.0
+
+  escreva("Insira seu nome: ")
+  leia(nomeFuncionario)
+  escreva("Insira sua idade: ")
+  leia(idadeFuncionario)
+  escreva("Insira seu peso (sem incluir 'kg'): ")
+  leia(pesoFuncionario)
+  escreva("Insira o valor que desejaria para seu salário (sem incluir vírgulas ou pontos): \n")
+  leia(salarioDesejado)
+
+  escreva("O funcionário ", nomeFuncionario, " de ", idadeFuncionario, " anos e com ", pesoFuncionario, " quilos,\n")
+  escreva("afirmou que o seu salário ideal seria no valor de: ", salarioDesejado," reais.")
+  }
+}
