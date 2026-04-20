@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class ProjetoConversaoF {
+public static void main(String[] args) {
+	// Perceba que "temp" agora não é uma var mas uma palavra que chama a função Scanner
+Scanner temp = new Scanner(System.in);
+// Variável que vai receber o valor da temperatura do usuário:
+int tempConvertido;
+
+System.out.println("Insira a temperatura atual em celsius: ");
+tempConvertido =temp.nextInt();
+
+int f= ((tempConvertido*9)+160)/5;
+// Evite vírgulas.
+System.out.print("A temperatura, em Fahrenheit, é: "+ f);
+
+temp.close();
+	}
+}
