@@ -1,0 +1,10 @@
+programa {
+  funcao inicio() { //demonstração do número/valor lógico
+    inteiro numA, numB
+  numA = 3
+  numB = 5
+
+    escreva(numA==numB, "\n")
+    escreva(numA!=numB)
+  }
+}
