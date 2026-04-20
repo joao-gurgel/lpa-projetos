@@ -1,0 +1,22 @@
+package javaAula03;
+import java.util.Scanner;
+public class Q05 {
+
+	public static void main(String[] args) {
+		Scanner valor = new Scanner(System.in);
+		double userNum;
+		System.out.println ("Insira um valor: ");
+		userNum = valor.nextDouble();
+		
+		if ((userNum > 0)&&(!(userNum < 0))) {
+			System.out.println ("Novo valor: "+userNum * 2);
+		}
+		if ((userNum == 0)&&(!(userNum < 0))) {
+			System.out.println ("Você descobriu um segredo!!");
+		}
+		else {
+			System.out.println ("Novo valor: "+userNum * 3);
+		}
+	}
+// João Guilherme Ribeiro Gurgel
+}
