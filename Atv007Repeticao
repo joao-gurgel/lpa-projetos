@@ -1,0 +1,24 @@
+package cont;
+import java.util.Scanner;
+
+public class RepeticaoAula007 {
+    public static void main(String[] args) {
+        Scanner valor = new Scanner(System.in);
+
+        int num;
+
+        System.out.print("Insira valor inteiro: ");
+        num = valor.nextInt();
+        
+        if(num==666) {
+			System.out.println("Hello World! :P");
+		}
+        else {
+        while (num >= 0) {
+            System.out.print(num + ", ");
+            num = num - 2; 
+        }
+        }
+        valor.close();
+    }
+}
