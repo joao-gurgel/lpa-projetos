@@ -1,0 +1,25 @@
+package entrada_saida_exercicios;
+import java.util.Scanner;
+public class Palavra_chave_Teste {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		String user, senha;
+		
+		
+		System.out.println("Usuario (NAO UTILIZE ACENTOS): ");
+		user = ler.nextLine();
+		
+		System.out.println("Senha: ");
+		senha = ler.nextLine();
+		
+		
+		if(user.equals("Joao")&&senha.equals("1324")) {
+			System.out.print("Acesso permitido");
+		}
+		else {
+			System.out.print("Usuario ou Senha incorretos.");
+		}
+	}
+
+}
