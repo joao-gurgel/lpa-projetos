@@ -1,0 +1,31 @@
+package javaAula03;
+import java.util.Scanner;
+public class ExercicioModulacao {
+// Joao Guilherme Ribeiro Gurgel
+	public static void main(String[] args) {
+	Scanner ler = new Scanner(System.in);
+	int age;
+		System.out.print("Porfavor, insira sua idade: ");
+		age = ler.nextInt();
+		
+		String resultado = verificar(age);
+		System.out.println(resultado);
+	}
+	
+		public static String verificar(int age) {
+
+		if (age >= 0 && age <= 15) {
+		 return "Sem permissao para votar";
+			    }
+
+		if ((age >= 16 && age <= 17) || age > 65) {
+	 return "Voto facultativo";
+			    }
+
+		if (age >= 18 && age <= 64) {
+			        return "Voto obrigatorio";
+			    }
+
+			    return "Idade invalida";
+			}
+}
