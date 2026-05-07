@@ -1,0 +1,48 @@
+package cont;
+import java.util.Scanner;
+public class VetoresEx0 {
+
+	public static void main(String[] args) {
+    	Scanner valor = new Scanner(System.in);
+
+    	int[] vetor1 = new int[4];
+    	int[] vetor2 = new int[4];
+    	int[] vetor3 = new int[4];
+
+    	int i = 0;
+    	while(i < vetor1.length) {
+
+    	System.out.println("Por faovr, digite um numero para o vetor 1:");
+    	vetor1[i] = valor.nextInt();
+    	i++;
+        }
+
+        i = 0;
+        while(i < vetor1.length) {
+        
+        	System.out.println("Agora, digite um numero para o vetor 2:");
+        	vetor2[i] = valor.nextInt();
+        	i++;
+        }
+
+        i = 0;
+        while(i < vetor1.length) {
+
+            vetor3[i] = vetor1[i] + vetor2[i];
+
+            i++;
+        }
+        i = 0;
+        
+        System.out.println("Vetor soma:");
+
+        while(i < vetor1.length) {
+
+            System.out.println(vetor3[i]);
+
+            i++;
+        }
+
+        valor.close();
+    }
+}
