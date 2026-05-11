@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class StringAula {
+
+	public static void main(String[] args) {
+		String palavra;
+
+		Scanner ler = new Scanner(System.in);
+
+		System.out.print("Insira uma palavra: ");
+		palavra = ler.next();
+        palavraVertical(palavra);
+		ler.close();
+	}
+
+	public static void palavraVertical(String palavra) {
+		int letras = (palavra.length());
+		int parametro = 0;
+		while (parametro < letras) {
+			System.out.println(palavra.charAt(parametro));
+			parametro++;
+		}
+	}
+}
